@@ -16,8 +16,9 @@ const Hero = () => {
           <Image
             src="/Line.png"
             alt="Line"
-            width='100'
-            height='30'
+            width={100}
+            height={30}
+            priority
           />
         </p>
         <h1 className="text-4xl md:text-5xl font-bold text-primary leading-snug">
@@ -30,10 +31,12 @@ const Hero = () => {
       {/* Right Side: Watch Video Button */}
       <Link href="/video" passHref>
         <div className="relative flex items-start gap-6 mt-0 lg:mt-24 lg:flex-row cursor-pointer backdrop-brightness-50 p-6 rounded-lg w-full lg:w-auto">
-          <img
+          <Image
             src="/video-icon.png"
-            alt="Video"
-            className="w-10 h-10"
+            alt="Video Icon"
+            width={40}
+            height={40}
+            priority
           />
           <span className="text-primary font-bold text-xl md:text-lg lg:text-left">
             Watch <br /> Profile Video

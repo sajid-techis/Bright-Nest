@@ -1,6 +1,7 @@
 "use client";
 import Link from 'next/link';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -17,7 +18,7 @@ export default function Navbar() {
     setDropdownOpen(false); // Close dropdown when mobile menu is opened
   };
 
-  const handleClickOutside = (event) => {
+  const handleClickOutside = useCallback((event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target) && !isMobileMenuOpen) {
       setDropdownOpen(false);
     }
@@ -25,23 +26,29 @@ export default function Navbar() {
     if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
       setMobileMenuOpen(false);
     }
-  };
+  }, [isMobileMenuOpen]);
 
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, []);
+  }, [handleClickOutside]); // Add handleClickOutside as a dependency
 
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-md p-4">
       <div className="container mx-auto flex items-center justify-between">
         {/* Left Section: Logo */}
         <div className="flex items-center space-x-2 flex-1">
-          <img src="/default.png" alt="Bright Nest Logo" className="h-10 rounded-full" />
+          <Image 
+            src="/default.png" 
+            alt="Bright Nest Logo" 
+            className="h-10 rounded-full" 
+            width={40} // Set appropriate width based on design
+            height={40} // Set appropriate height based on design
+          />
           <Link href="/">
-          <div className="text-xl font-bold text-primary">Bright Nest</div>
+            <div className="text-xl font-bold text-primary">Bright Nest</div>
           </Link>
         </div>
 

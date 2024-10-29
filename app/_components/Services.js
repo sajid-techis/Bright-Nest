@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image"; // Import Image component from Next.js
 import { FaRegSquare, FaLayerGroup, FaBuilding } from "react-icons/fa"; // Importing icons from React Icons
 
 const services = [
@@ -19,7 +20,7 @@ const services = [
     icon: <FaBuilding className="text-secondary" />,
     title: "Building Space",
     description:
-      "We specialize in designing and optimizing building spaces that reflect your brand's identity. From commercial projects to residential developments, Bright Nest ensures each space is thoughtfully crafted.",
+      "We specialize in designing and optimizing building spaces that reflect your brand&apos;s identity. From commercial projects to residential developments, Bright Nest ensures each space is thoughtfully crafted.",
   },
 ];
 
@@ -31,7 +32,13 @@ const Services = () => {
           <div className="flex-1 flex flex-col mb-4 md:mb-0">
             <h4 className="text-lg font-bold mb-2 flex items-center">
               What We Do{" "}
-              <img src="/Line.png" alt="Line" className="ml-4 h-0.5 w-24" />
+              <Image 
+                src="/Line.png" 
+                alt="Line" 
+                className="ml-4 h-0.5 w-24" 
+                width={96} // Adjust width as needed
+                height={1} // Adjust height as needed
+              />
             </h4>
             <h1 className="text-4xl font-semibold mb-12 text-secondary">
               Our Services
@@ -39,7 +46,7 @@ const Services = () => {
           </div>
           <p className="flex-1 mb-16 md:flex-none md:w-1/3">
             Bright Nest is dedicated to creating beautiful, functional spaces
-            that resonate with our clients' lifestyles. Our team of experienced
+            that resonate with our clients&apos; lifestyles. Our team of experienced
             designers works closely with you to bring your dreams to life.
           </p>
         </div>

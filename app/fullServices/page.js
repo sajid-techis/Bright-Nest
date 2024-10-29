@@ -8,6 +8,7 @@ import {
   FaBuilding,
 } from "react-icons/fa"; // Importing icons from React Icons
 import { FaKitchenSet } from "react-icons/fa6";
+import Image from 'next/image'; // Import Image from Next.js
 
 // Sample service data
 const services = [
@@ -71,7 +72,7 @@ const FullServices = () => {
           <div className="flex-1 flex flex-col mb-6 md:mb-0">
             <h4 className="text-lg font-bold mb-2 flex items-center">
               What We Do
-              <img src="/Line.png" alt="Line" className="ml-4 h-0.5 w-24" />
+              <Image src="/Line.png" alt="Line" width={96} height={2} className="ml-4 h-0.5 w-24" />
             </h4>
             <h1 className="text-3xl md:text-4xl font-semibold mb-6 text-secondary">
               Our Services
@@ -102,10 +103,12 @@ const FullServices = () => {
                   {service.title}
                 </h4>
                 <p className="text-sm mb-4">{service.description}</p>
-                <img
+                <Image
                   src={service.image}
                   alt={service.title}
                   className="w-full h-40 object-cover rounded-lg mb-4"
+                  width={640} // Set the width as per your design
+                  height={256} // Set the height as per your design
                 />
 
                 {/* Button to Booking Page */}

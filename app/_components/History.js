@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image"; // Import Image from Next.js
+
 const History = () => {
   return (
     <div
@@ -11,7 +13,14 @@ const History = () => {
           We Design Your <span className='text-secondary'>Homey</span> <br/> 
           <span className='text-secondary'>Space</span> for Happy Living
         </h2>
-        <img src='/model1.png' alt='Model' className='w-full lg:w-3/4' />
+        <Image
+          src='/model1.png' // Image source
+          alt='Model'
+          className='w-full lg:w-3/4' // Responsive styling
+          layout="responsive" // Make the image responsive
+          width={800} // Set the width as per your design
+          height={600} // Set the height as per your design
+        />
       </div>
     </div>
   );
