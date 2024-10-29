@@ -74,9 +74,11 @@ const Services = () => {
         </div>
 
         <div className="text-center mt-16">
+          <Link href='/fullServices'>
           <button className="bg-secondary hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded">
             See All Services
           </button>
+          </Link>
         </div>
       </div>
     </section>
