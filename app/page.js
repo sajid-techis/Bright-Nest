@@ -1,10 +1,10 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import History from "./components/History";
-import About from "./components/About";
-import Work from "./components/Work";
-import AnimatedCounter from "./components/AnimatedCounter";
-import Services from "./components/Services";
+import Navbar from "./_components/Navbar";
+import Hero from "./_components/Hero";
+import History from "./_components/History";
+import About from "./_components/About";
+import Work from "./_components/Work";
+import AnimatedCounter from "./_components/AnimatedCounter";
+import Services from "./_components/Services";
 
 export default function Home() {
   return (
