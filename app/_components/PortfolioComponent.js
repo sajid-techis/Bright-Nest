@@ -83,7 +83,7 @@ const PortfolioComponent = () => {
           {projects.map((project, projectIndex) => (
             <div
               key={project.id}
-              className="mx-auto w-[90%] md:w-auto min-w-[350px] sm:min-w-[280px] md:min-w-[320px] lg:min-w-[400px] bg-secondary rounded-lg p-4 mb-6 md:mb-0 inline-block"
+              className="mx-auto w-[90%] md:w-auto min-w-[300px] sm:min-w-[280px] md:min-w-[320px] lg:min-w-[400px] bg-secondary rounded-lg p-4 mb-6 md:mb-0 inline-block"
             >
               <h3 className="text-lg font-semibold mb-4">{project.label}</h3>
 
