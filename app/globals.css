@@ -19,3 +19,10 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Outline text effect */
+.outline-text {
+  color: transparent;                /* Make the fill transparent */
+  -webkit-text-stroke: 1px #255751;  /* For WebKit browsers */         /* Standard property (not widely supported) */
+}
+

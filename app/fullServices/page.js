@@ -99,7 +99,7 @@ const FullServices = () => {
 
               {/* Card Content */}
               <div className="p-6 flex flex-col h-full">
-                <h4 className="text-xl font-semibold mt-4 mb-2">
+                <h4 className="text-xl font-semibold mt-4 mb-2 text-primary">
                   {service.title}
                 </h4>
                 <p className="text-sm mb-4">{service.description}</p>

@@ -27,7 +27,7 @@ const Counter = ({ end, duration }) => {
 
 const AnimatedCounter = () => {
   return (
-    <div className="bg-[#f8f6f2] py-10">
+    <div className="bg-[#FDF6D7] py-10">
       <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         <div>
           <Counter end={5} duration={1} />

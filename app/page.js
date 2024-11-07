@@ -5,6 +5,9 @@ import About from "./_components/About";
 import Work from "./_components/Work";
 import AnimatedCounter from "./_components/AnimatedCounter";
 import Services from "./_components/Services";
+import VideoComponent from "./_components/VideoComponent";
+import PortfolioComponent from "./_components/PortfolioComponent";
+import PartnerCompanies from "./_components/PartnerCompanies";
 
 export default function Home() {
   return (
@@ -15,6 +18,9 @@ export default function Home() {
       <Work/>
       <AnimatedCounter/>
       <Services/>
+      <VideoComponent/>
+      <PortfolioComponent/>
+      <PartnerCompanies/>
     </div>
   );
 }
