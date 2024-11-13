@@ -100,13 +100,13 @@ const PortfolioComponent = () => {
                 {/* Navigation Buttons */}
                 <button
                   onClick={() => prevImage(projectIndex)}
-                  className="absolute top-1/2 left-1 transform -translate-y-1/2 bg-greenish text-white px-3 py-1 sm:px-4 sm:py-2 rounded-lg shadow-lg hover:bg-green-500 transition duration-200 ease-in-out"
+                  className="absolute top-1/2 left-1 transform -translate-y-1/2 bg-greenish text-white px-3 py-1 sm:px-3 sm:py-1 rounded-lg shadow-lg hover:bg-green-500 transition duration-200 ease-in-out"
                 >
                   &larr;
                 </button>
                 <button
                   onClick={() => nextImage(projectIndex)}
-                  className="absolute top-1/2 right-1 transform -translate-y-1/2 bg-secondary text-white px-3 py-1 sm:px-4 sm:py-2 rounded-lg shadow-lg hover:bg-green-500 transition duration-200 ease-in-out"
+                  className="absolute top-1/2 right-1 transform -translate-y-1/2 bg-secondary text-white px-3 py-1 sm:px-3 sm:py-1 rounded-lg shadow-lg hover:bg-green-500 transition duration-200 ease-in-out"
                 >
                   &rarr;
                 </button>

@@ -13,7 +13,7 @@ const Footer = () => {
         <p className="text-[#4A4A4A] text-sm sm:text-base">
           Stay up to date with the latest news, announcements, and articles.
         </p>
-        <div className="mt-4 flex flex-col sm:flex-row justify-center items-center">
+        <div className="mt-4 flex flex-col gap-4 sm:flex-row justify-center items-center">
           <input 
             type="email" 
             placeholder="Enter your email" 

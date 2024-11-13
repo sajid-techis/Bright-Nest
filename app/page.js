@@ -9,6 +9,7 @@ import VideoComponent from "./_components/VideoComponent";
 import PortfolioComponent from "./_components/PortfolioComponent";
 import PartnerCompanies from "./_components/PartnerCompanies";
 
+
 export default function Home() {
   return (
     <div>
