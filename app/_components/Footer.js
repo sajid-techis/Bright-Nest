@@ -44,7 +44,7 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-bold text-greenish">COMPANY</h3>
           <ul className="mt-2 space-y-1 text-[#4A4A4A] text-sm sm:text-base">
-            <li><Link href="#">About Us</Link></li>
+            <li><Link href="/about">About Us</Link></li>
             <li><Link href="#">Services</Link></li>
             <li><Link href="#">Portfolio</Link></li>
           </ul>
